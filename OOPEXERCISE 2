@@ -1,0 +1,54 @@
+Good morning sir..Mao ni akong duha ka subClass
+
+
+public class Motoposh extends Motors{
+	private String releasedate;
+
+	public Motoposh(String name, double weight, String releasedate){
+		super (name, weight);
+		this.releasedate = releasedate;
+	}
+
+	@Override
+	public String makesound()
+	{
+		return "bruum! bruum!,";
+	}
+
+	public String getReleasedate(){
+		return releasedate;
+	}
+
+	public void SetReleasedate(String releasedate){
+		this.releasedate = releasedate;
+	}
+}
+
+
+
+
+
+public class XRM extends Motors{
+	private String model;
+	
+	public Motoposh(String name, double weight, String model){
+		super(name, weight);
+		this.model = model;
+	}
+
+	@Override
+	public String makesound()
+	{
+		return "bruum! bruum!,";
+	}
+	
+	public String getModel(){
+		return model;
+	}
+	
+	public void setModel(String model){
+		this.model = model;
+	}
+}
+
+
